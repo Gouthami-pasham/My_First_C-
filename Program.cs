@@ -7,7 +7,6 @@ namespace test1
         static void Main(string[] args)
         {
 
-
             /*Declare and use a bool, int, double, char, string, and decimal type.
             Implement at least one loop
             Implement at least one if or if-else branch with conditions
@@ -16,6 +15,7 @@ namespace test1
             Use Console.WriteLine and Console.ReadLine
             Use string interpolation ($"") and \n or \t
             Code must compile and run.*/
+            double count = 1;
             while (1 == 1)
             {
                 Console.WriteLine("Welcome!!, Please enter your name!");
@@ -23,6 +23,7 @@ namespace test1
                 Console.WriteLine("You above 18? true/false");
                 var age = Console.ReadLine();
                 bool age1 = Convert.ToBoolean(age);
+               
 
                 if (!age1)
                 {
@@ -105,8 +106,10 @@ namespace test1
                 }
                 else if(c!='q')
                     {
-                    Console.WriteLine("Happy to see you again!!");
+                    count++;
+                    Console.WriteLine($"Happy to see you again!!, you have visited us for the {count} time");
                 }
+                
             }
 
         }
